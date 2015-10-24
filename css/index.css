@@ -1,10 +1,148 @@
+@import 'fonts.css';
+
 html, body {
-	height: 100%;
-	margin: 100%;
-	width: 100%;
+/*	height: 100%;
+	width: 100%;*/
 	margin: 0;
 	padding: 0;
 }
+
 body{
 	background: linear-gradient(to top right, #bc6b98, #7e79b4) no-repeat;
+	font: normal 16px 'robotoregular';
+	box-sizing: border-box;
+	padding: 50px;
+}
+
+/*================= HEADER */
+#header{
+	margin-bottom: 80px;
+}
+.header-logos{
+	margin-bottom: 70px;
+}
+.header-logos::after{
+	content: '';
+	clear: both;
+	display: block;
+	overflow: hidden;
+}
+.logo-ibank{
+	display: block;
+	float: left;
+}
+.logo-model{
+	display: block;
+	float: right;
+}
+h1{
+	margin: 0;
+	text-align: center;
+}
+h1 img{
+	vertical-align: bottom;
+	width: 100%;
+}
+/*================= END HEADER */
+
+.content{
+	margin-bottom: 160px;
+}
+h2{
+	font-size: 3.375em;
+	color: #fff;
+	text-align: center;
+	font-family: 'robotothin';
+	margin-bottom: 100px;
+}
+h2 span{
+	font-family: 'robotomedium';
+}
+.content-img{
+	width: 55.51086082059533%;
+	max-width: 690px;
+	margin: 0 auto 100px;
+}
+.content-img img{
+	width: 100%;
+}
+
+
+.content-form{
+	margin: 0 auto;
+	width: 52.292839903459374%;
+}
+.form-item-row{
+	margin-top: 40px;
+}
+.form-item-row:first-child{
+	margin-top: 0;
+}
+.form-item-row input{
+	width: 100%;
+	border: none;
+	background: transparent;
+	border-bottom: 2px solid #fff;
+	font-size: 2em;
+	color: #fff;
+	outline: none;
+	padding-bottom: 20px;
+	font-family: 'robotothin';
+}
+/*placeholder style*/
+::-webkit-input-placeholder{
+	color: #fff;
+}
+/* Firefox 18- */
+:-moz-placeholder{
+	color: #fff;
+}
+/* Firefox 19+ */
+::-moz-placeholder{
+	color: #fff;
+}
+:-ms-input-placeholder{
+	color: #fff;
+}
+/*END placeholder style END*/
+.form-item-row button{
+	background: #f7f0f5;
+	width: 100%;
+	padding: 20px 0;
+	text-align: center;
+	font-family: 'robotobold';
+	font-size: 2.51625em;
+	color: #7e79b4;
+	border: none;
+	cursor: pointer;
+}
+
+#footer{
+	border-top: 2px solid #fff;
+	padding-top: 40px;
+}
+.partners-list{
+	padding: 0;
+	margin: 0;
+}
+.partners-list::after{
+	content: '';
+	clear: both;
+	display: block;
+	overflow: hidden;
+}
+.partners-list li{
+	list-style: none;
+	float: left;
+	margin-right: 2.3069637883008355%;
+}
+.partners-list li:last-child{
+	margin-right: 0;
+}
+.partners-list li a{
+	display: block;
+}
+.partners-list li a img{
+	width: 100%;
+	vertical-align: bottom;
 }
