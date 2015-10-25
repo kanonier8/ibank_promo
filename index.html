@@ -8,6 +8,13 @@
 </head>
 
 <body>
+
+	<div id="overlay">
+		<div class="popup-msg">
+			Ваша заявка принята
+		</div>
+	</div>
+
 	<div class="wrapper">
 
 
@@ -41,13 +48,13 @@
 
 			<form class="content-form">
 				<div class="form-item-row">
-					<input type="text" name="name" placeholder="ФИО">
+					<input type="text" name="name" placeholder="ФИО" required>
 				</div>
 				<div class="form-item-row">
-					<input type="tel" name="phone" placeholder="Моб. номер">
+					<input type="tel" pattern="(\+?\d[- .]*){7,13}" name="phone" placeholder="Моб. номер" required>
 				</div>
 				<div class="form-item-row">
-					<input type="email" name="email" placeholder="@">
+					<input type="email" name="email" placeholder="@" required>
 				</div>
 				<div class="form-item-row">
 					<input type="text" name="category" placeholder="Категория пользователя">
@@ -63,24 +70,24 @@
 		<footer id="footer">
 
 			<ul class="partners-list">
-				<li><a href="javascript:void(0)"><img src="img/partners/logo_1.png" alt=""></a></li>
-				<li><a href="javascript:void(0)"><img src="img/partners/logo_2.png" alt=""></a></li>
-				<li><a href="javascript:void(0)"><img src="img/partners/logo_3.png" alt=""></a></li>
-				<li><a href="javascript:void(0)"><img src="img/partners/logo_4.png" alt=""></a></li>
-				<li><a href="javascript:void(0)"><img src="img/partners/logo_5.png" alt=""></a></li>
-				<li><a href="javascript:void(0)"><img src="img/partners/logo_6.png" alt=""></a></li>
-				<li><a href="javascript:void(0)"><img src="img/partners/logo_7.png" alt=""></a></li>
-				<li><a href="javascript:void(0)"><img src="img/partners/logo_8.png" alt=""></a></li>
-				<li><a href="javascript:void(0)"><img src="img/partners/logo_9.png" alt=""></a></li>
-				<li><a href="javascript:void(0)"><img src="img/partners/logo_10.png" alt=""></a></li>
-				<li><a href="javascript:void(0)"><img src="img/partners/logo_11.png" alt=""></a></li>
+				<li><a href="javascript:void(0)" title="Riche"><img src="img/partners/logo_1.png" alt="Riche"></a></li>
+				<li><a href="javascript:void(0)" title="insmile"><img src="img/partners/logo_2.png" alt="insmile"></a></li>
+				<li><a href="javascript:void(0)" title="stage entertaiment"><img src="img/partners/logo_3.png" alt="stage entertaiment"></a></li>
+				<li><a href="javascript:void(0)" title="brow"><img src="img/partners/logo_4.png" alt="brow up"></a></li>
+				<li><a href="javascript:void(0)" title="hydrop"><img src="img/partners/logo_5.png" alt="hydrop"></a></li>
+				<li><a href="javascript:void(0)" title="персона"><img src="img/partners/logo_6.png" alt="персона"></a></li>
+				<li><a href="javascript:void(0)" title="клаустрофобия"><img src="img/partners/logo_7.png" alt="клаустрофобия"></a></li>
+				<li><a href="javascript:void(0)" title="la intuicion"><img src="img/partners/logo_8.png" alt="la intuicion"></a></li>
+				<li><a href="javascript:void(0)" title="реформа"><img src="img/partners/logo_9.png" alt="реформа"></a></li>
+				<li><a href="javascript:void(0)" title="face beauty"><img src="img/partners/logo_10.png" alt="face beauty"></a></li>
+				<li><a href="javascript:void(0)" title="mac flowers"><img src="img/partners/logo_11.png" alt="mac flowers"></a></li>
 			</ul>
 
 		</footer>
 
 	</div>
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script src="js/index.js"></script>
 </body>
 </html>

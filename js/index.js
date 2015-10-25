@@ -16,17 +16,23 @@ $(function() {
 		formData = $('.content-form').serializeArray();
 
 		// отправим данные на сервер
-		$.ajax({
-			url: '/',
-			type: 'post',
-			data: formData,
-			success: function(data) {
-				console.log('send success');
-			},
-			error: function(error) {
-				console.log('send error ', error);
-			}
-		})
+
+		// $.ajax({
+		// 	url: '/',
+		// 	type: 'post',
+		// 	data: formData,
+		// 	success: function(data) {
+		// 		console.log('send success');
+		// 	},
+		// 	error: function(error) {
+		// 		console.log('send error ', error);
+		// 	}
+		// })
+
+		// сообщение, после отправки
+		$('#overlay').fadeIn(300).delay(1000).fadeOut(300);
+		// сбросим данные с формы
+		$('.content-form').find('input').val('');
 
 	})
 
