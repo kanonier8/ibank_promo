@@ -75,9 +75,11 @@ h2 span{
 .content-form{
 	margin: 0 auto;
 	width: 52.292839903459374%;
+	min-width: 400px
 }
 .form-item-row{
 	margin-top: 40px;
+	position: relative;
 }
 .form-item-row:first-child{
 	margin-top: 0;
@@ -119,6 +121,12 @@ h2 span{
 	color: #7e79b4;
 	border: none;
 	cursor: pointer;
+}
+.error{
+	bottom: 0;
+	left: 0;
+	color: #922828;
+	width: 100%;
 }
 
 #footer{
